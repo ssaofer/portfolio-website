@@ -78,9 +78,9 @@ export default function Projects() {
                 <ProjectCard
                   title={video.title}
                   description={video.description}
-                  thumbnail={video.cover}
+                  thumbnail={video.thumbnail}
                   isVideo
-                  onClick={() => setPlayingVideo(video.src)}
+                  onClick={() => setPlayingVideo(video.video ?? "")}
                 />
               </div>
             ))}
